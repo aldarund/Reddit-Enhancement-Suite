@@ -1,22 +1,21 @@
 {
-	"name": "Reddit Enhancement Suite",
+	"name": "Iowndot Enhancement Suite",
 	"version": "4.3.0",
 	"manifest_version": 2,
 	"minimum_chrome_version": "20.0",
-	"description": "Reddit Enhancement Suite - a group of enhancements for browsing Reddit",
+	"description": "Iowndot.com Enhancement Suite - a group of enhancements for browsing Iowndot.com",
 	"background": {
 		"scripts": ["background.js"]
 	},
-	"homepage_url": "http://redditenhancementsuite.com",
+	"homepage_url": "https://github.com/aldarund/Reddit-Enhancement-Suite",
 	"content_scripts": [
 		{
 			"matches": [
-				"http://reddit.honestbleeps.com/*",
-				"http://redditenhancementsuite.com/*",
-				"http://reddit.com/*",
-				"https://reddit.com/*",
-				"http://*.reddit.com/*",
-				"https://*.reddit.com/*"
+				"https://github.com/aldarund/Reddit-Enhancement-Suite",
+				"http://iowndot.com/*",
+				"https://iowndot.com/*",
+				"http://*.iowndot.com/*",
+				"https://*.iowndot.com/*"
 			],
 			"js": [
 				"jquery-1.9.1.min.js",
@@ -44,12 +43,11 @@
 	    "cookies",
 		"tabs",
 		"history",
-		"http://redditenhancementsuite.com/",
-		"http://reddit.honestbleeps.com/",
-		"http://reddit.com/*",
-		"https://reddit.com/*",
-		"http://*.reddit.com/*",
-		"https://*.reddit.com/*",
+		"https://github.com/aldarund/Reddit-Enhancement-Suite",
+		"http://iowndot.com/*",
+		"https://iowndot.com/*",
+		"http://*.iowndot.com/*",
+		"https://*.iowndot.com/*",
 		"http://redditgifts.com/*",
 		"http://api.twitter.com/*",
 		"http://api.imgur.com/*",

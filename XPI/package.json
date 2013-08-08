@@ -1,12 +1,12 @@
 {
-    "name": "reddit_res",
-    "license": "GPL",
-    "author": "honestbleeps", 
-    "version": "4.3.0",
-    "fullName": "Reddit Enhancement Suite",
-    "id": "jid1-xUfzOsOFlzSOXg",
-    "description": "A suite of tools to enhance Reddit",
+    "description": "A suite of tools to enhance Iowndot.com", 
+    "license": "GPL", 
+    "author": "aldarund", 
+    "version": "4.3.0", 
+    "fullName": "Iowndot.com Enhancement Suite", 
     "permissions": {
-    	"private-browsing": true
-    }
+        "private-browsing": true
+    }, 
+    "id": "jid1-HbBaoRnhHpCQZQ", 
+    "name": "iowndot_res"
 }

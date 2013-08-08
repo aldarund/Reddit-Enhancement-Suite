@@ -95,7 +95,7 @@ chrome.extension.onMessage.addListener(
 				if (!chrome.cookies) {
                     chrome.cookies = chrome.experimental.cookies;
                 }
-				chrome.cookies.remove({'url': 'http://reddit.com', 'name': request.cname});
+				chrome.cookies.remove({'url': 'http://iowndot.com', 'name': request.cname});
 				break;
 			case 'GM_xmlhttpRequest':
 				if (request.aggressiveCache || XHRCache.forceCache) {
@@ -149,7 +149,7 @@ chrome.extension.onMessage.addListener(
 				// handle requests from keyboardNav module
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 				}
 				// Get the selected tab so we can get the index of it.  This allows us to open our new tab as the "next" tab.
 				var newIndex = sender.tab.index+1;
@@ -161,7 +161,7 @@ chrome.extension.onMessage.addListener(
 				// handle requests from keyboardNav module
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 				}
 				// Get the selected tab so we can get the index of it.  This allows us to open our new tab as the "next" tab.
 				var newIndex = sender.tab.index+1;

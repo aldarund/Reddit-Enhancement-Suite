@@ -25,7 +25,7 @@ void STDMETHODCALLTYPE CRESBHO::OnNavigateComplete(IDispatch *pDisp, VARIANT *pv
 
     CComQIPtr<IWebBrowser2> spTempWebBrowser = pDisp;
 	//Activate only on this domain
-	CComBSTR dest = "http://www.reddit.com/";
+	CComBSTR dest = "http://www.iowndot.com/";
 
 	CComBSTR url = pvarURL->bstrVal;
 	

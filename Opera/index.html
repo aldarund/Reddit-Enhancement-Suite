@@ -168,7 +168,7 @@ opera.extension.addEventListener( "message", function( event ) {
 				// handle requests from keyboardNav module
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 					
 				}
 				opera.extension.tabs.create({url: thisLinkURL, focused: button});
@@ -182,7 +182,7 @@ opera.extension.addEventListener( "message", function( event ) {
 				var focus = (request.focus == true);
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 					
 				}
 				opera.extension.tabs.create({url: thisLinkURL, focused: focus});

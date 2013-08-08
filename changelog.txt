@@ -229,7 +229,7 @@ New features:
 	- The first UI fix: "save" buttons on links now become "unsave" buttons, and vice versa, upon clicking them.
 	- Adds a checkbox below search box in subreddits to automatically restrict search to that subreddit by default
 - Spam Button **NEW MODULE!
-	- New module - adds a "spam" button to posts for easy reporting to /r/reportthespammers
+	- New module - adds a "spam" button to posts for easy reporting to /d/reportthespammers
 - Style Tweaks
 	- Added a toggle for a colorblind friendly orangered envelope
 - Keyboard Navigation
@@ -414,7 +414,7 @@ New features:
 - filteReddit
 	- NSFW toggle on/off to auto-hide NSFW links (links only, not comments!)
 	- Filter links by domain or keyword in title
-	- Filter subreddits out of /r/all
+	- Filter subreddits out of /d/all
 - New Comment Count
 	- Shows the number of new comments since your last visit
 	- Cleans out saved comment counts for sites you haven't visited in a week

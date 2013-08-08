@@ -143,7 +143,7 @@ tabs.on('activate', function(tab) {
 
 
 pageMod.PageMod({
-  include: ["*.reddit.com"],
+  include: ["*.iowndot.com"],
   contentScriptWhen: 'start',
   contentScriptFile: [
 	self.data.url('jquery-1.9.1.min.js'),
@@ -171,7 +171,7 @@ pageMod.PageMod({
 		var request = data;
 		switch(request.requestType) {
 			case 'deleteCookie':
-				cookieManager.remove('.reddit.com', request.cname, '/', false);
+				cookieManager.remove('.iowndot.com', request.cname, '/', false);
 				break;
 			case 'GM_xmlhttpRequest':
 				var responseObj = {
@@ -249,7 +249,7 @@ pageMod.PageMod({
 				// handle requests from keyboardNav module
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 				}
 				// Get the selected tab so we can get the index of it.  This allows us to open our new tab as the "next" tab.
 				tabs.open({url: thisLinkURL, inBackground: button, isPrivate: isPrivate });
@@ -260,7 +260,7 @@ pageMod.PageMod({
 				var isPrivate = priv.isPrivate(windows.activeWindow);
 				thisLinkURL = request.linkURL;
 				if (thisLinkURL.toLowerCase().substring(0,4) != 'http') {
-					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.reddit.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
+					(thisLinkURL.substring(0,1) == '/') ? thisLinkURL = 'http://www.iowndot.com' + thisLinkURL : thisLinkURL = location.href + thisLinkURL;
 				}
 				// Get the selected tab so we can get the index of it.  This allows us to open our new tab as the "next" tab.
 				tabs.open({url: thisLinkURL, inBackground: !focus, isPrivate: isPrivate });
